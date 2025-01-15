@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Quizlet JSON Downloader",
+  "version": "1.0",
+  "description": "Adds a button to download Quizlet sets as JSON",
+  "icons": {
+    "48": "border-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.quizlet.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
